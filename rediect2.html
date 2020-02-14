@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>GUVI-Web Development</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style1.css">
+
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+
+  <form  class="form"  id="form" action="regphp1.php" name="form" method="POST" novalidate="on"  >
+
+
+   <input id="noaccount" name="radioaccount" type="radio" class="radio radio--invisible" checked />
+   <input id="account" name="radioaccount" type="radio" class="radio radio--invisible"/>
+   <div class="form_background" style="margin-left: 138px">
+   <!-- <div class="form-group form-group--account">
+      <h3 class="form-group_title">Log in</h3>
+      <input class="form-group_input" type="email" placeholder="Email" id="email1" name="email1" />
+      <input class="form-group_input" type="password" placeholder="Password" id="psw1" name="psw1"/>
+      <input type="submit" class="button button--form" value="Login" name="log">
+
+    </div>-->
+    <div class="form-group form-group--noaccount" id="form-signup">
+      <h3 class="form-group_title">Sign up</h3>
+      <input class="form-group_input" type="text" placeholder="Date of Birth(dd/mm/yyyy)" id="dob" name="dob" autocomplete="off" />
+      <input class="form-group_input" type="text" placeholder="Age" id="age" name="age" autocomplete="off" />
+      <input class="form-group_input" type="text" placeholder="Phone Number" id="phno" name="phno" autocomplete="off" />
+      <input type="submit" class="button button--form"  value="Sign up" name="sub" onclick="return(myvalidate());">
+
+    </div>
+  </div>
+
+  <fieldset class="fieldset">
+    <div class="form_content form_content--noaccount">
+
+    </div>
+  </fieldset>
+<!--<fieldset class="fieldset">
+  <h2>Have an account ?</h2>
+
+  <div class="form_content form_content--noaccount">
+
+  </div>
+  <label for="account" class="button">login</label>
+</fieldset>-->
+</form>
+<!-- partial -->
+<script  src="./script_re.js"></script>
+
+</body>
+</html>
